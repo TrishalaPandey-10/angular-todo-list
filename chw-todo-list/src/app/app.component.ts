@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
-import { TodosComponent } from './MyComponents/todos/todos.component';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
- imports:[TodosComponent],
+ imports:[RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'chw-todo-list';
   constructor(){
-  //   setTimeout(() => {
-  //   this.title="changed title";
-  // }, 2000);
+    setTimeout(() => {
+    this.title="Get Set Go";
+  }, 2000);
   }
 }
