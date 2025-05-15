@@ -16,5 +16,8 @@ export class TodosItemComponent implements OnInit {
   ngOnInit(): void {
     
   }
+  onClick(todo: Todo){
+    console.log("onClick has been trigerred")
+  }
 
 }
